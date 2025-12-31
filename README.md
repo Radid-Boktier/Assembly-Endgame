@@ -1,16 +1,79 @@
-# React + Vite
+## 🧩 Assembly Survival
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A challenging and interactive word-guessing game built with **JavaScript**, **React** and **CSS**.
+Players must correctly guess letters to save programming languages from elimination—before the game reaches its end.
 
-Currently, two official plugins are available:
+The project is built using **component-based architecture**, **React hooks**, and an **accessibility-first approach**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📷 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Photo Editor Preview](https://github.com/Radid-Boktier/Assembly-Endgame/blob/main/src/assets/ui%20of%20assembly-endgame.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌐 Live Demo
+🚀 **Deployed on Vercel**  
+[Play Assembly Survival](https://assembly-survival.vercel.app/)
+
+---
+## 🚀 Features
+
+### 🎮 Game Module
+- Random word selection at the start of each game
+- Interactive on-screen keyboard for letter guessing
+- Prevents duplicate letter guesses
+- Correct and incorrect guesses visually highlighted
+- Keyboard buttons automatically disabled when the game ends
+
+### 🧠 Game Logic & State Management
+- Game state managed with React useState
+- Only two states: current word and guessed letters
+- Derived values track win, lose, and game-over conditions
+- Immutable updates ensure predictable behavior
+
+### 🧨 Language Elimination System
+- Each incorrect guess eliminates a programming language
+- Visual “lost” state applied progressively
+- Dynamic farewell messages for eliminated languages
+- Final loss state reveals all missed letters
+
+### 🏁 Win & Lose Experience
+- Confetti animation on successful completion
+- Clear win and loss messages via status panel
+- Game outcome determined automatically without manual triggers
+- Confetti animation runs once per win (non-recycling)
+
+### 🔁 New Game Flow
+- “New Game” button appears only after game over
+- Resets:
+  - Current word
+  - Guessed letters
+- No page reload required (fully client-side reset)
+
+### ♿ Accessibility
+- Screen reader announcements using aria-live
+- Visually hidden status updates for assistive technologies
+- Disabled keyboard prevent interaction after game completion
+
+### 🧱 Frontend Architecture
+This project follows a component-driven frontend architecture:
+- Reusable UI components:
+- Keyboard
+  - Languages
+  - SingleCharacter
+  - StatusBar
+- Conditional rendering based on game state
+- Centralized game logic inside App.jsx
+- Utility functions for word selection and farewell messages
+- Clean and readable JSX with minimal side effects
+
+### 🧠 Tech Stack
+- React 
+- HTML5
+- CSS (custom styling)
+- Vite
+- clsx (conditional class handling)
+- react-confetti (win animation)
+- Vercel (deployment)
