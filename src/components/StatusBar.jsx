@@ -1,8 +1,8 @@
-export default function StatusBar() {
+export default function StatusBar({ heading, description, gameStatusClass }) {
   return (
-    <section className="game-status">
-      <h1 className="status-heading">You Win</h1>
-      <p className="status-description">Well done! 🎉</p>
+    <section aria-live="polite" role="status" className={gameStatusClass}>
+      <h1 className="status-heading">{heading}</h1>
+      <p className="status-description">{description}</p>
     </section>
   );
 }

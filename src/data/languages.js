@@ -53,22 +53,22 @@ export const languages = [
     backgroundColor: '#2D519F',
     color: '#F9F4DA',
   },
-  {
-    id: 10,
-    name: 'Go',
-    backgroundColor: '#109e93ff',
-    color: '#1E1E1E',
-  },
-  {
-    id: 11,
-    name: 'C++',
-    backgroundColor: '#85009cff',
-    color: '#F9F4DA',
-  },
-  {
-    id: 12,
-    name: 'Java',
-    backgroundColor: '#ED8B00',
-    color: '#1E1E1E',
-  },
+  // {
+  //   id: 10,
+  //   name: 'Go',
+  //   backgroundColor: '#109e93ff',
+  //   color: '#1E1E1E',
+  // },
+  // {
+  //   id: 11,
+  //   name: 'C++',
+  //   backgroundColor: '#85009cff',
+  //   color: '#F9F4DA',
+  // },
+  // {
+  //   id: 12,
+  //   name: 'Java',
+  //   backgroundColor: '#ED8B00',
+  //   color: '#1E1E1E',
+  // },
 ];
